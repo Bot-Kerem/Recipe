@@ -1,6 +1,7 @@
 
 body{
-    margin: 0;
+    margin-left: 0;
+    display: inline;
 }
 
 .navbar{
@@ -8,9 +9,10 @@ body{
     width: 100%;
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0;    
     overflow: hidden;
     background-color: #111;
+    
 }
 
 .navbar-item{
@@ -18,7 +20,6 @@ body{
     display: inline;
     padding: 14px 16px;
     text-decoration: none;
-    background-color: green;
     background-color: #333;
     color: white;
 }
@@ -30,4 +31,36 @@ body{
 .input{
     border: 0px;
     font-size: medium;
+}
+
+.recipes{
+    padding-top: 5vh;
+}
+
+.recipe{
+    background-color: #333;
+    margin: 1rem;
+    padding: 1rem;
+    color: white;
+}
+
+.recipe {
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none;
+}
+
+.recipe::before {
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.recipe-open::before {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Safari */
+    transform: rotate(90deg);  
 }
