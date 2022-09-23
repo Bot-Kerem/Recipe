@@ -68,7 +68,3 @@ body{
 .nested {
     display: none;
 }
-
-.active {
-    display: block;
-}
